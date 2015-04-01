@@ -12,6 +12,7 @@ gem 'bootstrap-sass', '~> 3.3.4'
 gem 'jquery-rails'
 gem 'react-rails', github: 'reactjs/react-rails'
 gem 'puma'
+gem "stash-api", github: 'johnbeynon/stash-api-client'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

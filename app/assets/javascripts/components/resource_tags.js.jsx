@@ -1,11 +1,14 @@
 var ResourceTags = React.createClass({
 
   render: function() {
+    tags = [];
+    this.props.tags.forEach(function(tag) {
+      tags.push(<Tag key={tag.id} tag={tag} />)
+      tags.push(<span>&nbsp;</span>)
+    });
     return (
-      <div className="tags">
-        <span className="label label-danger">Default</span>
-        &nbsp;
-        <span className="label label-default">Default</span>
+      <div>
+        {tags}
       </div>
     )
   }

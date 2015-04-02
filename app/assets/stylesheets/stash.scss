@@ -7,4 +7,11 @@ body {
 .thumbnail {
   height: 250px;
   padding-left: 10px;
+  cursor: pointer;
+
+  .excerpt {
+    height: 150px;
+    display: block;
+  }
 }
+

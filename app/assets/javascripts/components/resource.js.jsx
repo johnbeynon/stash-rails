@@ -5,15 +5,22 @@ var Resource = React.createClass({
     id: React.PropTypes.string
   },
 
+  openURL: function() {
+    window.open(this.props.resource.url,'_blank');
+  },
+
   render: function() {
-    console.log('resource: ', this.props);
     return (
-      <div className="col-md-3 col-sm-6" key={this.props.resource.id}>
+      <div className="resource col-md-3 col-sm-6" key={this.props.resource.id} onClick={this.openURL}>
         <div className="thumbnail">
-          <h4>{this.props.resource.title}</h4>
-          <p>{this.props.resource.url}</p>
+          <span className="title">
+            <h4>{this.props.resource.title}</h4>
+          </span>
+          <span className="excerpt">
+            some copy here
+          </span>
           <ResourceTags tags={this.props.resource.tags} />
-          <small>somedomain.com</small>
+          <small>{this.props.resource.domain}</small>
         </div>
       </div>
     );

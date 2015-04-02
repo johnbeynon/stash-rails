@@ -5,7 +5,7 @@ var Tag = React.createClass({
 
   render: function() {
     return (
-        <li><a href="#">{this.props.tag.name}</a></li>
+      <span className="label label-danger">{this.props.tag.name}</span>
     );
   }
 });

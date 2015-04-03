@@ -10,8 +10,20 @@ body {
   cursor: pointer;
 
   .excerpt {
-    height: 150px;
-    display: block;
+    //height: 150px;
+    //display: block;
   }
+
+    
+  .foot {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+  }
+
+  h4 {
+    line-height: 1.2;
+  }
+
 }
 

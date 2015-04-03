@@ -1,7 +1,27 @@
 var ResourceList = React.createClass({
 
+  getInitialState: function() {
+    console.log("Initial state");
+    return ({ resources: [] });
+  },
+
+  componentDidMount: function() {
+    this.loadResources();
+  },
+
+  loadResources: function() {
+    console.log("Loading resources...");
+    $.ajax({
+      url: "http://127.0.0.1:5000/collections/54b016de-448a-4187-8f13-a4da36cc0392/resources",
+      success: function(resources) {
+        console.log('Got them!');
+        this.setState({resources: resources});
+      }.bind(this)
+    });
+  },
+
   render: function() {
-    var resourceNodes = this.props.resources.map(function (resource) {
+    var resourceNodes = this.state.resources.map(function (resource) {
       return (
         <Resource resource={resource} />
       );

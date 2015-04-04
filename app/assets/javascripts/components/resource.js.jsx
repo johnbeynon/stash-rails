@@ -19,8 +19,10 @@ var Resource = React.createClass({
           <span className="excerpt">
             some copy here
           </span>
-          <ResourceTags tags={this.props.resource.tags} />
-          <small>{this.props.resource.domain}</small>
+          <span className="foot">
+            <ResourceTags tags={this.props.resource.tags} />
+            <small>{this.props.resource.domain}</small>
+          </span>
         </div>
       </div>
     );

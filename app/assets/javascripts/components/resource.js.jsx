@@ -17,7 +17,7 @@ var Resource = React.createClass({
             <h4>{this.props.resource.title}</h4>
           </span>
           <span className="excerpt">
-            some copy here
+            {this.props.resource.description}
           </span>
           <span className="foot">
             <ResourceTags tags={this.props.resource.tags} />

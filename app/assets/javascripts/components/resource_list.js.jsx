@@ -12,7 +12,7 @@ var ResourceList = React.createClass({
   loadResources: function() {
     console.log("Loading resources...");
     $.ajax({
-      url: "http://127.0.0.1:5000/collections/54b016de-448a-4187-8f13-a4da36cc0392/resources",
+      url: "http://127.0.0.1:5000/collections/fc924dc8-1cc1-4810-85b4-edad944efd61/resources",
       success: function(resources) {
         console.log('Got them!');
         this.setState({resources: resources});

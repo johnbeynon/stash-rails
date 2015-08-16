@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/johnbeynon/stash-api-client.git
-  revision: 7b09b35a39a57833469e03e99ce167fb4ec23aa2
+  revision: 6b0111fa09f58fa41705173aa8396b96519af093
   specs:
-    stash-api (0.1.0)
+    stash-api (0.2.0)
       heroics (~> 0.0)
 
 GIT
@@ -82,11 +82,11 @@ GEM
     connection_pool (2.2.0)
     debug_inspector (0.0.2)
     erubis (2.7.0)
-    excon (0.45.1)
-    execjs (2.5.2)
+    excon (0.45.4)
+    execjs (2.6.0)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
-    heroics (0.0.13)
+    heroics (0.0.14)
       erubis (~> 2.7.0)
       excon
       moneta
@@ -106,7 +106,7 @@ GEM
     mini_portile (0.6.2)
     minitest (5.8.0)
     moneta (0.8.0)
-    multi_json (1.11.1)
+    multi_json (1.11.2)
     netrc (0.10.3)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
@@ -128,7 +128,7 @@ GEM
       sprockets-rails
     rails-deprecated_sanitizer (1.0.3)
       activesupport (>= 4.2.0.alpha)
-    rails-dom-testing (1.0.6)
+    rails-dom-testing (1.0.7)
       activesupport (>= 4.2.0.beta, < 5.0)
       nokogiri (~> 1.6.0)
       rails-deprecated_sanitizer (>= 1.0.1)
@@ -153,7 +153,7 @@ GEM
       sprockets-rails (>= 2.0, < 4.0)
       tilt (~> 1.1)
     spring (1.3.3)
-    sprockets (3.2.0)
+    sprockets (3.3.1)
       rack (~> 1.0)
     sprockets-rails (2.3.2)
       actionpack (>= 3.0)

@@ -5,6 +5,12 @@
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application'%>
   <%= csrf_meta_tags %>
+  <script>
+    window.Config = {
+      endpoint: '<%= ENV["STASH_API_URL"] %>',
+      collection_id: '<%= ENV["STASH_COLLECTION_ID"] %>'
+    }
+  </script>
 </head>
 <body>
 
